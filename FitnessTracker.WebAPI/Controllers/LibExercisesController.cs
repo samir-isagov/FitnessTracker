@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FitnessTracker.EFDataAccess.DataAccess;
 using FitnessTracker.EFDataAccess.Models;
@@ -22,6 +20,7 @@ namespace FitnessTracker.WebAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<LibExercise>> Get()
         {
+            await LoadLibDataAsync();
             return await ctx.LibExercises.ToListAsync();
         }
 

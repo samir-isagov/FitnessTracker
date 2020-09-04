@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="libData.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="libData.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
   </ItemGroup>
 

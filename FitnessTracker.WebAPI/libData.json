@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "Crunches",
+    "Calories": 8,
+    "Duration": 30
+  },
+  {
+    "Name": "Touch Toes",
+    "Calories": 15,
+    "Duration": 180
+  },
+  {
+    "Name": "Burpees",
+    "Calories": 9,
+    "Duration": 60
+  },
+  {
+    "Name": "Side Lunges",
+    "Calories": 18,
+    "Duration": 120
+  }
+]

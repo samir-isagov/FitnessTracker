@@ -1,7 +1,6 @@
 using FitnessTracker.EFDataAccess.DataAccess;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -36,6 +35,8 @@ namespace FitnessTracker.WebAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(options => options.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseAuthorization();
 
