@@ -3,15 +3,17 @@ using System;
 using FitnessTracker.EFDataAccess.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Oracle.EntityFrameworkCore.Metadata;
 
 namespace FitnessTracker.EFDataAccess.Migrations
 {
     [DbContext(typeof(FitnessTrackerContext))]
-    partial class FitnessTrackerContextModelSnapshot : ModelSnapshot
+    [Migration("20200904063549_AddCaloriesPropToFinishedExercise")]
+    partial class AddCaloriesPropToFinishedExercise
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
